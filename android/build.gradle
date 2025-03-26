@@ -45,6 +45,11 @@ android {
     namespace "com.github.chinloyal.pusher_client"
 }
 
+
+kotlin {
+    jvmToolchain(17) // Убедитесь, что Kotlin использует ту же версию
+}
+
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
